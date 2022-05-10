@@ -1,3 +1,5 @@
+package classroom;
+
 public class Juris {
 
     public static void main(String[] args) {
