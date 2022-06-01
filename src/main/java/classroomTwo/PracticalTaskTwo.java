@@ -8,9 +8,6 @@ import java.util.Scanner;
 public class PracticalTaskTwo {
 
 
-
-
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         manaRandomMetode();
@@ -21,7 +18,7 @@ public class PracticalTaskTwo {
         System.out.println("Ievadi savu vecumu");
         int age = scanner.nextInt();
         System.out.println("Esi sveicināts: " + name + "!");
-        System.out.println(String.format("Esi Sveicināts: %s !",name));
+        System.out.println(String.format("Esi Sveicināts: %s !", name));
         System.out.println("Jūsu vecums ir: " + age);
 
 //        Ievadi pirmo skatili
@@ -41,6 +38,13 @@ public class PracticalTaskTwo {
         int b = 10;
         int c = 5;
         int d = 11;
+
+        int x = 0;
+        System.out.println(x > 0);
+
+        String krasa = "Zila";
+        krasa.equals("Zaļa"); //false
+        krasa.equals("Zila"); //true
         //Lielāks >
         System.out.println(b > a); //true
         System.out.println(a > b); //false
@@ -105,35 +109,30 @@ public class PracticalTaskTwo {
         System.out.println("Koda turpinājums");
 
 
-
         System.out.println("Ievadi savu vecumu...");
         int vecumsTris = scanner.nextInt();
-        if(vecumsTris>=18)
-        {
+        if (vecumsTris >= 18) {
             System.out.println("Cilvēks drīkst balsot");
-        } else{
+        } else {
             System.out.println("Cilvēks nedrīkst balsot");
         }
-
-
 
 
         System.out.println("Koda turpinājums");
 
         System.out.println("Ievadi skatli..");
         int skaitlisViens = scanner.nextInt();
-        if(skaitlisViens==10){
+        if (skaitlisViens == 10) {
             System.out.println("Printejam Skaitlis 10");
-        } else if(skaitlisViens==15){
+        } else if (skaitlisViens == 15) {
             System.out.println("Printejam Skaitlis 15");
-        } else if(skaitlisViens==20){
+        } else if (skaitlisViens == 20) {
             System.out.println("Printejam Skaitlis 20");
         } else {
             System.out.println("Skaitlis ir nezināms");
         }
 
         System.out.println("Koda turpinājums");
-
 
 
         //Janodefine cilveks
@@ -196,25 +195,28 @@ public class PracticalTaskTwo {
 
         int skaitlis;
 
-            skaitlis = scanner.nextInt();
-            if (skaitlis > 0) {
-                System.out.println("Lielaks par 0");
-            } else if (skaitlis < 0){
-                System.out.println("Mazaks par 0");
-            } else{
-                System.out.println("Skaitlis ir 0");
-            }
+        skaitlis = scanner.nextInt();
+        if (skaitlis > 0) {
+            System.out.println("Lielaks par 0");
+        } else if (skaitlis < 0) {
+            System.out.println("Mazaks par 0");
+        } else {
+            System.out.println("Skaitlis ir 0");
+        }
 
 
         int skaitlisJauns = 5;
-            if(skaitlisJauns%2==0){
-                System.out.println("Skaitlis ir para skaitlis");
-            }else{
-                System.out.println("Skaitlis ir nepara skaitlis");
-            }
+        if (skaitlisJauns % 2 == 0) {
+            System.out.println("Skaitlis ir para skaitlis");
+        } else {
+            System.out.println("Skaitlis ir nepara skaitlis");
+        }
+
+
+
     }
 
-    static void manaRandomMetode(){
+    static void manaRandomMetode() {
         System.out.println("HOHOHOOHOH JURIS");
     }
 

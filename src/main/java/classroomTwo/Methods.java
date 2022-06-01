@@ -5,26 +5,63 @@ import java.util.Scanner;
 public class Methods {
 
     public static void main(String[] args) {
-        System.out.println("Sākās koda izpilde");
-        checkPersonAge();
-        checkPersonPension();
-        checkPersionPension2(65,'V');
-        checkPersionPension2(64,'V');
-        checkPersionPension2(60,'S');
-        checkPersionPension2(65,'S');
-        checkPersionPension2(45,'S');
-        int manaKvadrataLaukums = aprekinatKvadrataLaukumu(5);
-        System.out.println("Kvadrata lauikuims ir: " + manaKvadrataLaukums);
-
-        System.out.println("Beidzās koda izpilde");
+//        System.out.println("Sākās koda izpilde");
+//        checkPersonAge();
+//        checkPersonPension();
+//        checkPersionPension2(65,'V');
+//        checkPersionPension2(64,'V');
+//        checkPersionPension2(60,'S');
+//        checkPersionPension2(65,'S');
+//        checkPersionPension2(45,'S');
+//        int manaKvadrataLaukums = aprekinatKvadrataLaukumu(5);
+//        System.out.println("Kvadrata lauikuims ir: " + manaKvadrataLaukums);
+//
+//        System.out.println("Beidzās koda izpilde");
+//        printBusinessCardTwo("Līga", "Kalniņa", "+371 12312313", 1965);
+//        printBusinessCardTwo("Juris", "Vītols", "+371 5142431", 1930);
+//        int summa = sum(4, 10);
+//        System.out.println(summa);
+        System.out.println(average(10,2,4));
     }
 
-    static int aprekinatKvadrataLaukumu(int mala){
+    static double average(double a, double b, double c){
+        return (a+b+c)/3;
+    }
+
+    static int sum(int a, int b) {
+        return a + b;
+    }
+
+    static void printBusinessCard() {
+        String name = "Jānis";
+        String surname = "Bērziņš";
+        int dateOfBirth = 1990;
+        String telephone = "+371 12345678";
+        System.out.println("Vizītkarte");
+        System.out.println("##########");
+        System.out.println("Vārds: " + name);
+        System.out.println("Uzvārds: " + surname);
+        System.out.println("Telefona numurs: " + telephone);
+        System.out.println("Dzimšanas gads: " + dateOfBirth);
+        System.out.println("##########");
+    }
+
+    static void printBusinessCardTwo(String name, String surname, String telephone, int dateOfBirth) {
+        System.out.println("Vizītkarte");
+        System.out.println("##########");
+        System.out.println("Vārds: " + name);
+        System.out.println("Uzvārds: " + surname);
+        System.out.println("Telefona numurs: " + telephone);
+        System.out.println("Dzimšanas gads: " + dateOfBirth);
+        System.out.println("##########");
+    }
+
+    static int aprekinatKvadrataLaukumu(int mala) {
         int laukums = mala * mala;
         return laukums;
     }
 
-    static void checkPersionPension2(int vecums,char dzimums){
+    static void checkPersionPension2(int vecums, char dzimums) {
         boolean drikstDotiesPensija = false;
         if (vecums >= 65 && dzimums == 'V') {
             drikstDotiesPensija = true;
@@ -32,10 +69,10 @@ public class Methods {
             drikstDotiesPensija = true;
         }
         if (drikstDotiesPensija) {
-            System.out.println(String.format("Dzimums: %s, Vecums: %s",dzimums,vecums));
+            System.out.println(String.format("Dzimums: %s, Vecums: %s", dzimums, vecums));
             System.out.println("Cilveks drikst doties pensija!");
-        }else{
-            System.out.println(String.format("Dzimums: %s, Vecums: %s",dzimums,vecums));
+        } else {
+            System.out.println(String.format("Dzimums: %s, Vecums: %s", dzimums, vecums));
             System.out.println("Cilveks nedrikst doties pensija!");
         }
     }
@@ -69,7 +106,6 @@ public class Methods {
         }
         System.out.println("Beidzās  metodes izpilde");
     }
-
 
 
 }
