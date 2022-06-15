@@ -12,4 +12,8 @@ public class Animal {
         System.out.println("ARGHHHHGHHHH");
     }
 
+    protected void piemers123(){
+        System.out.println("protected piemers");
+    }
+
 }

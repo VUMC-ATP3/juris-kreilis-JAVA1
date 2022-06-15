@@ -98,7 +98,5 @@ public class Main {
         cat.printName();
         cat.izdodSkanu();
 
-
-
     }
 }
